@@ -1,18 +1,20 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(45deg, #6b48ff, #ff4848);
+    background: url('https://teksnologi.com/wp-content/uploads/2022/11/anime-wallpaper-night-sky-starry-moonlight-swing-scaled.jpg') no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #e0e0e0;
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.95);
+    background: #2a2a2a;
     padding: 2rem;
     border-radius: 20px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    box-shadow: 8px 8px 16px #1a1a1a, -8px -8px 16px #3a3a3a;
     text-align: center;
 }
 
@@ -21,18 +23,21 @@ body {
 }
 
 h1 {
-    color: #333;
+    color: #e0e0e0;
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
 input {
     padding: 12px 20px;
-    border: 2px solid #ddd;
+    border: none;
     border-radius: 10px;
     font-size: 1rem;
     margin-bottom: 1rem;
     width: 250px;
+    background: #2a2a2a;
+    color: #e0e0e0;
+    box-shadow: inset 4px 4px 8px #1a1a1a, inset -4px -4px 8px #3a3a3a;
 }
 
 button {
@@ -44,6 +49,7 @@ button {
     font-size: 1.1rem;
     cursor: pointer;
     transition: transform 0.2s;
+    box-shadow: 4px 4px 8px #1a1a1a, -4px -4px 8px #3a3a3a;
 }
 
 button:hover {
@@ -60,7 +66,7 @@ button:hover {
 }
 
 .cell {
-    background: #f5f5f5;
+    background: #2a2a2a;
     aspect-ratio: 1;
     border-radius: 10px;
     display: flex;
@@ -70,12 +76,11 @@ button:hover {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.2s;
-    border: 2px solid #333;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 4px 4px 8px #1a1a1a, -4px -4px 8px #3a3a3a;
 }
 
 .cell:hover {
-    background: #e0e0e0;
+    background: #333333;
 }
 
 .cell.just-played {
@@ -96,7 +101,7 @@ button:hover {
 .loading-spinner {
     width: 40px;
     height: 40px;
-    border: 4px solid #f3f3f3;
+    border: 4px solid #2a2a2a;
     border-top: 4px solid #6b48ff;
     border-radius: 50%;
     animation: spin 1s linear infinite;
@@ -110,16 +115,17 @@ button:hover {
     margin: 1rem auto;
     max-width: 400px;
     padding: 1rem;
-    background: rgba(0,0,0,0.05);
+    background: #2a2a2a;
     border-radius: 15px;
+    box-shadow: 4px 4px 8px #1a1a1a, -4px -4px 8px #3a3a3a;
 }
 
 .player-card {
     text-align: center;
     padding: 1rem;
     border-radius: 10px;
-    background: white;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background: #2a2a2a;
+    box-shadow: 4px 4px 8px #1a1a1a, -4px -4px 8px #3a3a3a;
     width: 45%;
     transition: all 0.3s ease;
 }
@@ -131,7 +137,7 @@ button:hover {
 
 .player-name {
     font-weight: bold;
-    color: #333;
+    color: #e0e0e0;
     margin-bottom: 0.5rem;
 }
 
@@ -150,6 +156,7 @@ button:hover {
     background: transparent;
     border: 2px solid #6b48ff;
     color: #6b48ff;
+    box-shadow: 4px 4px 8px #1a1a1a, -4px -4px 8px #3a3a3a;
 }
 
 .mode-btn.selected {
@@ -171,6 +178,8 @@ button:hover {
     z-index: 1000;
     min-width: 300px;
     display: none;
+    background: #2a2a2a;
+    box-shadow: 8px 8px 16px #1a1a1a, -8px -8px 16px #3a3a3a;
 }
 
 .notification-win {
